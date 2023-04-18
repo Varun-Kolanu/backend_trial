@@ -1,0 +1,22 @@
+//- This is the template basic file
+
+html 
+  head 
+    block title 
+    style 
+        include ../static/css/base.css
+    block style 
+  body 
+    nav#navbar 
+        ul 
+            div#logo
+                a(href= "/"): img(src="../static/img/logo.jpg", alt="MUSIC")
+                | VMA
+            li: a(href = "/") Home
+            li: a(href = "#aboutSection") About Us
+            li: a(href = "#sponsorsSection") Sponsors
+            li: a(href = "/contact") Contact Us
+    block content 
+    block scripts
+    footer#footer 
+        | Copyright &copy; 2023 VMC.com | All rights reserved.

@@ -1,0 +1,51 @@
+doctype html 
+html 
+  head 
+    title= title
+    style 
+        include ../static/css/style.css
+  body 
+    nav#navbar 
+        ul 
+            div#logo
+                img(src="../static/img/logo.jpg", alt="MUSIC")
+                | VMA
+            li #[a(href = "/") Home]
+            li #[a(href = "/") About Us]
+            li #[a(href = "/") Sponsors]
+            li #[a(href = "/") Contact Us]
+    section#introSection
+        h1 Welcome to Varun Music Academy
+        p experience the magic of music
+    section#aboutSection 
+        h2 About Us
+        div.cards
+            div#teaching.card
+                h4 Teaching 
+                div.content
+                    div.img
+                        img(src="../static/img/teacher.jpg", alt="Music")
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi natus reiciendis eveniet repellendus. Ab alias soluta     blanditiis incidunt temporibus mollitia inventore nesciunt? Magni veritatis saepe distinctio adipisci porro provident   aliquam vero, soluta aut sapiente.
+            div#perfection.card
+                h4 Perfection 
+                div.content
+                    div.img
+                        img(src="../static/img/perfect.jpg", alt="Music")
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, consequuntur! Minima nobis doloremque atque  pariatur maxime reiciendis. Laborum optio nam quaerat, eius earum doloribus esse consectetur doloremque error quas.
+            div#care.card 
+                h4 Care 
+                div.content
+                    div.img
+                        img(src="../static/img/care.jpg", alt="Music")
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel alias unde rem placeat assumenda nulla quidem aut    deserunt provident nisi quaerat laborum, earum dolor incidunt? Placeat ipsam facere unde, ipsa impedit fuga nesciunt   accusamus?
+    section#sponsorsSection
+        h3 Our Sponsors
+        div.sponsors
+            img(src="../static/img/apple.png", alt="Sponsors" class = "spImg")
+            img(src="../static/img/fblogo.png", alt="Sponsors" class = "spImg")
+            img(src="../static/img/instalogo.png", alt="Sponsors" class = "spImg")
+            img(src="../static/img/twitter.png", alt="Sponsors" class = "spImg")
+    footer#footer 
+        | Copyright &copy; 2023 VMC.com | All rights reserved.
+    script 
+        include ../static/index.js

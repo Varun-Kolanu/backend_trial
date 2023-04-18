@@ -1,0 +1,28 @@
+extend base.pug
+
+block title 
+    title Varun Music Academy
+
+block style 
+    style 
+        include ../static/css/contact.css
+
+block content 
+    div.alert#alert(style= alertcss)
+        div#text.box(style= boxcss)= content
+        div.box(style= boxcss)
+            button#cross(style= btncss).cross x
+    div.container 
+        div.heading
+            h1 Contact Us 
+        form(action = "/contact", method = "post", class = "form")
+            input(type = "text", name = "Name", placeholder = "Enter your name")
+            input(type = "text", name = "Class", placeholder = "Enter your class")
+            input(type = "tel", name = "MobileNumber", placeholder = "Enter your phone no.")
+            input(type = "email", name = "Email", placeholder = "Enter your email")
+            div.buttons
+                button(type = "submit", class = "btn") Submit
+                button(type = "reset", class = "btn") Reset
+
+block scripts 
+    script(src = "../static/js/index.js")
